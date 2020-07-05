@@ -1,0 +1,32 @@
+﻿<Window x:Class="Final.Managerlogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Final"
+        mc:Ignorable="d"
+        Title="Managerlogin" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" Background="LightPink">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="30" Background="Purple" MouseMove="WindowsMove">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0">
+                <Button  Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="20" Width="20" Click="Min_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <materialDesign:PackIcon Kind="WindowMinimize"/>
+                </Button>
+                <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Height="20" Width="20" Click="Close_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <materialDesign:PackIcon Kind="Power"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid>
+            <ProgressBar Orientation="Vertical" Height="10"  IsIndeterminate="True" />
+            <Button Content="注册用户" HorizontalAlignment="Left" Margin="125,93,0,0" VerticalAlignment="Top" Width="243" Height="80" FontSize="36" FontFamily="Forte" Click="Button_Click_2"/>
+            <Button Content="注册管理员" HorizontalAlignment="Left" Margin="125,240,0,0" VerticalAlignment="Top" Width="243" Height="80" FontSize="36" FontFamily="Forte" Click="Button_Click"/>
+            <Button Content="修改用户密码" HorizontalAlignment="Left" Margin="476,171,0,0" VerticalAlignment="Top" Width="256" Height="80" FontSize="36" FontFamily="Forte" Click="Button_Click_1" />
+            <materialDesign:PackIcon Kind="AccountPlus" RenderTransformOrigin="2.888,3.725" Height="88" Width="98" Margin="9,85,0,0" Foreground="#FF5E3CA8" />
+            <materialDesign:PackIcon Kind="AccountPlusOutline" Height="85" Width="97" Margin="10,240,0,0" Foreground="#FF5E3993" />
+            <materialDesign:PackIcon Kind="AccountTie" Margin="435,6,0,0" Height="41" Width="41" />
+            <TextBlock x:Name="tb1" HorizontalAlignment="Left" Margin="481,10,0,0" TextWrapping="Wrap" Text="你好：" VerticalAlignment="Top" Height="37" Width="251" FontFamily="Forte" FontSize="24" FontWeight="Bold"/>
+        </Grid>
+    </DockPanel>
+</Window>

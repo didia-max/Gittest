@@ -1,0 +1,18 @@
+﻿<Window x:Class="Final.Czpicture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final"
+        mc:Ignorable="d"
+        Title="Czpicture" Height="450" Width="450" Background="LightPink">
+    <Grid>
+        <Image Margin="63,10,57.2,90" Source="Image2.png" Stretch="Fill" HorizontalAlignment="Center"/>
+        <ProgressBar
+  Style="{StaticResource MaterialDesignCircularProgressBar}"
+  Value="0"
+  IsIndeterminate="True" Margin="84,359,324.2,39" Height="Auto" Width="Auto" />
+        <Label Content="正在处理充值，请稍等" HorizontalAlignment="Left" Margin="124,359,0,0" VerticalAlignment="Top" Height="43" Width="225" FontSize="20"/>
+
+    </Grid>
+</Window>
